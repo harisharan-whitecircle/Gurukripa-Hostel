@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                              
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Gurukripa Hostel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Gurukripa Hostel</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book.html">Residency Form</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li><a href="payment.html">Paymemt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="booking-form-container review-form">
+                <h1>✍️ Leave a Review</h1>
+                <p>We value your feedback! Please share your experience to help us improve.</p>
+                
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Your Feedback</legend>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Your Rating</label>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star" data-value="1"></i>
+                                <i class="fa-solid fa-star" data-value="2"></i>
+                                <i class="fa-solid fa-star" data-value="3"></i>
+                                <i class="fa-solid fa-star" data-value="4"></i>
+                                <i class="fa-solid fa-star" data-value="5"></i>
+                            </div>
+                            <input type="hidden" id="rating" name="rating" value="0" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-message">Review</label>
+                            <textarea id="review-message" name="review-message" rows="6" placeholder="Tell us about your stay..." required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal hidden" id="success-modal">
+        <div class="modal-content">
+            <button class="btn-close-modal">&times;</button>
+            <h2>Thank You! ✅</h2>
+            <p>Your review has been successfully submitted. We appreciate your feedback!</p>
+        </div>
+    </div>
+    <div class="modal hidden" id="fail-modal">
+        <div class="modal-content">
+            <button class="btn-close-modal">&times;</button>
+            <h2>Submission Failed ❌</h2>
+            <p>Something went wrong. Please try again.</p>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <strong>Owner Contact:</strong><br>
+                    <a href="tel:7489488110">7489488110</a><br>
+                    <a href="tel:6267668817">6267668817</a><br>
+                    <a href="mailto:Dityadey121@gmail.com">Dityadey121@gmail.com</a>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About Us</a>
+                    <a href="book.html">Residency Form</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="payment.html">Paymemt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="https://placehold.co/30x30/ffffff/000000?text=f" alt="Facebook"></a>
+                    <a href="#"><img src="https://placehold.co/30x30/ffffff/000000?text=i" alt="Instagram"></a>
+                    <a href="#"><img src="https://placehold.co/30x30/ffffff/000000?text=X" alt="Twitter/X"></a>
+                </div>
+                <div class="footer-powered">
+                    <p>Powered by Whitecircle Group</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

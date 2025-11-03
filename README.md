@@ -1,1 +1,1 @@
-# Gurukripa-Hostel
+# HostelUI
